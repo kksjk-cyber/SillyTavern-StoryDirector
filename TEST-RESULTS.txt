@@ -1,128 +1,88 @@
-
-> story-director@2.0.0 test
-> node --test tests/*.test.mjs
-
 TAP version 13
-# Subtest: 普通资料模板、唯一 ID、审核门槛
-ok 1 - 普通资料模板、唯一 ID、审核门槛
+# Subtest: 10位含前导零
+ok 1 - 10位含前导零
   ---
-  duration_ms: 1.381246
+  duration_ms: 2.585248
   type: 'test'
   ...
-# Subtest: 中文 BM25 与世界过滤
-ok 2 - 中文 BM25 与世界过滤
+# Subtest: 拒绝11位
+ok 2 - 拒绝11位
   ---
-  duration_ms: 1.43742
+  duration_ms: 0.300209
   type: 'test'
   ...
-# Subtest: 融合向量结果且拒绝未知 ID
-ok 3 - 融合向量结果且拒绝未知 ID
+# Subtest: 抽取开关
+ok 3 - 抽取开关
   ---
-  duration_ms: 0.62158
+  duration_ms: 0.27396
   type: 'test'
   ...
-# Subtest: AI JSON 校验与去重
-ok 4 - AI JSON 校验与去重
+# Subtest: 人格表100项
+ok 4 - 人格表100项
   ---
-  duration_ms: 1.179845
+  duration_ms: 0.16707
   type: 'test'
   ...
-# Subtest: 互斥组与冷却
-ok 5 - 互斥组与冷却
+# Subtest: 中位
+ok 5 - 中位
   ---
-  duration_ms: 0.392457
+  duration_ms: 0.492577
   type: 'test'
   ...
-# Subtest: 前置依赖与跨世界冲突
-ok 6 - 前置依赖与跨世界冲突
+# Subtest: 末位
+ok 6 - 末位
   ---
-  duration_ms: 0.283764
+  duration_ms: 0.20744
   type: 'test'
   ...
-# Subtest: Token 预算包括头部，不截断条目
-ok 7 - Token 预算包括头部，不截断条目
+# Subtest: 补全翻转
+ok 7 - 补全翻转
   ---
-  duration_ms: 0.575701
+  duration_ms: 0.286298
   type: 'test'
   ...
-# Subtest: 历史前缀回滚与状态保存
-ok 8 - 历史前缀回滚与状态保存
+# Subtest: 双池独立
+ok 8 - 双池独立
   ---
-  duration_ms: 0.531976
+  duration_ms: 0.398096
   type: 'test'
   ...
-# Subtest: 大库检索 3200 条
-ok 9 - 大库检索 3200 条
+# Subtest: 敌方策略末位
+ok 9 - 敌方策略末位
   ---
-  duration_ms: 57.347022
+  duration_ms: 0.490334
   type: 'test'
   ...
-# Subtest: SAG 双跳关联及可追溯路径
-ok 10 - SAG 双跳关联及可追溯路径
+# Subtest: 拒绝既定结果、未知对象与用户策略
+ok 10 - 拒绝既定结果、未知对象与用户策略
   ---
-  duration_ms: 2.168915
+  duration_ms: 1.038584
   type: 'test'
   ...
-# Subtest: 空种子不会任意扩展
-ok 11 - 空种子不会任意扩展
+# Subtest: 身份人格顺序
+ok 11 - 身份人格顺序
   ---
-  duration_ms: 0.164927
+  duration_ms: 0.343964
   type: 'test'
   ...
-# Subtest: 高频实体连接受限
-ok 12 - 高频实体连接受限
+# Subtest: 选项解析
+ok 12 - 选项解析
   ---
-  duration_ms: 0.34738
+  duration_ms: 1.741976
   type: 'test'
   ...
-# Subtest: 未发生事件不得直接标为完成
-ok 13 - 未发生事件不得直接标为完成
+# Subtest: 空计划不强制掷点
+ok 13 - 空计划不强制掷点
   ---
-  duration_ms: 0.545285
+  duration_ms: 0.337966
   type: 'test'
   ...
-# Subtest: 事件候选仅为 offered，真实引文才允许状态推进
-ok 14 - 事件候选仅为 offered，真实引文才允许状态推进
-  ---
-  duration_ms: 0.35406
-  type: 'test'
-  ...
-# Subtest: 事件完成后停止检索注入，目标清理
-ok 15 - 事件完成后停止检索注入，目标清理
-  ---
-  duration_ms: 0.353789
-  type: 'test'
-  ...
-# Subtest: 长期目标限于候选事件且期限有效
-ok 16 - 长期目标限于候选事件且期限有效
-  ---
-  duration_ms: 0.265627
-  type: 'test'
-  ...
-# Subtest: 事件过期和记忆召回
-ok 17 - 事件过期和记忆召回
-  ---
-  duration_ms: 0.320619
-  type: 'test'
-  ...
-# Subtest: 消息提交验证：失败、替换、空白不得提交
-ok 18 - 消息提交验证：失败、替换、空白不得提交
-  ---
-  duration_ms: 0.587038
-  type: 'test'
-  ...
-# Subtest: 完整快照恢复与编辑分支回滚
-ok 19 - 完整快照恢复与编辑分支回滚
-  ---
-  duration_ms: 0.645305
-  type: 'test'
-  ...
-1..19
-# tests 19
+1..13
+# tests 13
 # suites 0
-# pass 19
+# pass 13
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 140.591334
+# duration_ms 89.462197
