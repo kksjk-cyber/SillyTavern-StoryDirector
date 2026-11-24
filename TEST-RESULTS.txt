@@ -1,0 +1,128 @@
+
+> story-director@2.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: 普通资料模板、唯一 ID、审核门槛
+ok 1 - 普通资料模板、唯一 ID、审核门槛
+  ---
+  duration_ms: 1.381246
+  type: 'test'
+  ...
+# Subtest: 中文 BM25 与世界过滤
+ok 2 - 中文 BM25 与世界过滤
+  ---
+  duration_ms: 1.43742
+  type: 'test'
+  ...
+# Subtest: 融合向量结果且拒绝未知 ID
+ok 3 - 融合向量结果且拒绝未知 ID
+  ---
+  duration_ms: 0.62158
+  type: 'test'
+  ...
+# Subtest: AI JSON 校验与去重
+ok 4 - AI JSON 校验与去重
+  ---
+  duration_ms: 1.179845
+  type: 'test'
+  ...
+# Subtest: 互斥组与冷却
+ok 5 - 互斥组与冷却
+  ---
+  duration_ms: 0.392457
+  type: 'test'
+  ...
+# Subtest: 前置依赖与跨世界冲突
+ok 6 - 前置依赖与跨世界冲突
+  ---
+  duration_ms: 0.283764
+  type: 'test'
+  ...
+# Subtest: Token 预算包括头部，不截断条目
+ok 7 - Token 预算包括头部，不截断条目
+  ---
+  duration_ms: 0.575701
+  type: 'test'
+  ...
+# Subtest: 历史前缀回滚与状态保存
+ok 8 - 历史前缀回滚与状态保存
+  ---
+  duration_ms: 0.531976
+  type: 'test'
+  ...
+# Subtest: 大库检索 3200 条
+ok 9 - 大库检索 3200 条
+  ---
+  duration_ms: 57.347022
+  type: 'test'
+  ...
+# Subtest: SAG 双跳关联及可追溯路径
+ok 10 - SAG 双跳关联及可追溯路径
+  ---
+  duration_ms: 2.168915
+  type: 'test'
+  ...
+# Subtest: 空种子不会任意扩展
+ok 11 - 空种子不会任意扩展
+  ---
+  duration_ms: 0.164927
+  type: 'test'
+  ...
+# Subtest: 高频实体连接受限
+ok 12 - 高频实体连接受限
+  ---
+  duration_ms: 0.34738
+  type: 'test'
+  ...
+# Subtest: 未发生事件不得直接标为完成
+ok 13 - 未发生事件不得直接标为完成
+  ---
+  duration_ms: 0.545285
+  type: 'test'
+  ...
+# Subtest: 事件候选仅为 offered，真实引文才允许状态推进
+ok 14 - 事件候选仅为 offered，真实引文才允许状态推进
+  ---
+  duration_ms: 0.35406
+  type: 'test'
+  ...
+# Subtest: 事件完成后停止检索注入，目标清理
+ok 15 - 事件完成后停止检索注入，目标清理
+  ---
+  duration_ms: 0.353789
+  type: 'test'
+  ...
+# Subtest: 长期目标限于候选事件且期限有效
+ok 16 - 长期目标限于候选事件且期限有效
+  ---
+  duration_ms: 0.265627
+  type: 'test'
+  ...
+# Subtest: 事件过期和记忆召回
+ok 17 - 事件过期和记忆召回
+  ---
+  duration_ms: 0.320619
+  type: 'test'
+  ...
+# Subtest: 消息提交验证：失败、替换、空白不得提交
+ok 18 - 消息提交验证：失败、替换、空白不得提交
+  ---
+  duration_ms: 0.587038
+  type: 'test'
+  ...
+# Subtest: 完整快照恢复与编辑分支回滚
+ok 19 - 完整快照恢复与编辑分支回滚
+  ---
+  duration_ms: 0.645305
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 140.591334

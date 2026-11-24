@@ -1,0 +1,98 @@
+{
+  "schema": "story-director-lore-v1",
+  "entries": [
+    {
+      "id": "port",
+      "title": "雾港",
+      "summary": "海港、码头与浓雾中的航行线索",
+      "content": "雾港的灯塔由港务员维护。浓雾来临时船只须停泊等待信号。",
+      "world": "幻想航海",
+      "tags": [
+        "海港",
+        "灯塔",
+        "航行"
+      ],
+      "reviewed": true,
+      "kind": "fact"
+    },
+    {
+      "id": "map",
+      "title": "失落航图",
+      "summary": "旧海图指向无人岛，可在港口档案馆调查",
+      "content": "档案馆的旧航图标记了一座未命名岛屿；地图尚未经过验证。",
+      "world": "幻想航海",
+      "tags": [
+        "海图",
+        "岛屿",
+        "档案馆",
+        "调查"
+      ],
+      "reviewed": true,
+      "kind": "fact",
+      "entities": [
+        "旧航图",
+        "北辰印记"
+      ]
+    },
+    {
+      "id": "storm",
+      "title": "风暴预警",
+      "summary": "海面出现异常风向，可能影响航程",
+      "content": "气象台发出风暴预警。角色可以选择等待、调查或改道。",
+      "world": "幻想航海",
+      "tags": [
+        "风暴",
+        "天气",
+        "航行"
+      ],
+      "group": "weather",
+      "reviewed": true,
+      "kind": "event"
+    },
+    {
+      "id": "clear",
+      "title": "晴朗天气",
+      "summary": "晴朗海面适宜航行",
+      "content": "海上能见度良好，港务员宣布航道开放。",
+      "world": "幻想航海",
+      "tags": [
+        "天气",
+        "航行"
+      ],
+      "group": "weather",
+      "reviewed": true,
+      "kind": "event"
+    },
+    {
+      "id": "archive-seal",
+      "title": "北辰印记",
+      "summary": "档案封印关联制图师",
+      "content": "北辰印记是制图师协会的档案认证标识。",
+      "world": "幻想航海",
+      "tags": [
+        "档案认证"
+      ],
+      "entities": [
+        "北辰印记",
+        "制图师协会"
+      ],
+      "reviewed": true,
+      "kind": "fact"
+    },
+    {
+      "id": "cartographer",
+      "title": "制图师协会",
+      "summary": "协会保留失踪船只的登记簿",
+      "content": "制图师协会保存历史船只登记簿。",
+      "world": "幻想航海",
+      "tags": [
+        "登记簿"
+      ],
+      "entities": [
+        "制图师协会"
+      ],
+      "reviewed": true,
+      "kind": "fact"
+    }
+  ]
+}
